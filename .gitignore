@@ -1,0 +1,12 @@
+#仅忽略目录
+#/path/
+#忽略文件和目录
+#/file
+
+#反逻辑
+#!
+
+/build/
+
+/*.code-workspace
+!/*.code-workspace/
