@@ -5,10 +5,13 @@ get_filename_component(BUILD_TARGET_NAME ${CMAKE_CURRENT_SOURCE_DIR} NAME)#设�
 set(CMAKE_C_STANDARD 17)
 set(CMAKE_CXX_STANDARD 20)
 
+#GodotLib
+find_package(Godot REQUIRED)
+
 #私有源码
 aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR}/src PRIVATE_SRC)
 #构建目标
-add_executable(${BUILD_TARGET_NAME}
+add_library(${BUILD_TARGET_NAME} SHARED
     ${PRIVATE_SRC}
 )
 #目标包含目录
