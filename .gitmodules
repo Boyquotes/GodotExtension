@@ -1,3 +1,7 @@
 [submodule "vcpkg"]
 	path = vcpkg
 	url = https://github.com/microsoft/vcpkg.git
+[submodule "pack/godot-cpp"]
+	path = pack/godot-cpp
+	url = https://github.com/godotengine/godot-cpp.git
+	branch = 4.0
